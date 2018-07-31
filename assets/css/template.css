@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration:none;
+    font-family:'Arial';
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+    width: 990px;
+}
+.logo{
+    display: flex;
+    align-items:center;
+}
+
+.menu{
+    display:flex;
+    align-items: center;
+}
+nav ul,
+nav li{
+    margin: 0;
+    padding:0;
+}
+nav ul{
+    display:flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-transform:uppercase;
+    color:#727272;
+}
+
+nav .active a,
+nav a:hover{
+    background-color: #39AAE1;
+    color: #fff;
+}
+
+#banner{
+    display: flex;
+    justify-content:center;
+    background-image:url('../image/img1.jpg');
+    background-position:center;
+    background-size:cover;
+    height: 670px;
+}
+.column{
+    flex-direction:column;
+}
+
+.banner-headerLine{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.banner-headerLine h1{
+    color:#fff;
+    font-size: 4em;
+    text-shadow: 0px 1px 0 #ccc;
+    max-width: 350px;
+    padding: 0;
+    margin:0;
+}
+
+.banner-headerLine h2{
+    color: #fff;
+    font-size: 21px;
+    margin-top:30px;
+    max-width: 400px;
+    text-shadow: 0px 1px 0px #555;
+}
+.banner-options{
+    display:flex;
+    height:210px;
+}
+.banner1,
+.banner2,
+.banner3{
+    flex:1;
+    color:#fff;
+    padding: 20px;
+}
+.banner1{
+    background-color: #39AAE1;
+}
+.banner2{
+    background-color:#0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner-title h1{
+    font-size: 1.5em;
+}
+.banner-description{
+    font-size: 1em;
+    margin:20px 0;
+}
+.button{
+    display:inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 1em;
+}
+.hours{
+    display: flex;
+    flex-direction: column;
+}
+
+.hours-content{
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid rgba(255, 253, 253,0.3);
+}
+
+.hours-content p{
+    margin: 13px 0;
+}
+
+.content{
+    display:flex;
+    justify-content:center;
+}
+
+.content section{
+    flex: 2;
+}
+
+.content aside{
+    flex:1;
+}
+.widget-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.widget-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text{
+    color:#333;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.widget-title-bar{
+    width: 50px;
+    height: 2px;
+    background-color:#36a9e1;
+    margin-top: 10px;
+}
+
+.arrow{
+    display: flex;
+    margin: 0 15px;
+}
+.arrow-border{
+    border: 1px solid rgba(145, 140, 140,0.6);
+    font-size: 0.7em;
+    padding: 6px;
+    margin: 0 3px;
+    color: #fff;
+}
+.departaments{
+    display: flex;
+    flex-direction:column;
+}
+.departaments-header{
+    display:flex;
+    justify-content: space-between;
+   
+}
+.departaments-content{
+    width: 150px;
+    height: 150px;
+    background-color:#36a9e1;
+    margin:10px;
+}
+
+.widget-departaments{
+    margin-bottom:80px;
+}
+
+.make-text{
+    color: #333;
+    padding-bottom:30px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.consult{
+    display: flex;
+    align-items: center;
+    color:#333;
+    margin: 5px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.consult img{
+    width: 30px;
+}
+
+.news-date{
+    display: flex;
+}
+.news-posted-at{
+    background-color:#2b4c99;
+    color:#fff;
+    font-size: 1.2em;
+    padding:10px;
+}
+.news-coment{
+    background-color:#39aae1;
+    color:#fff;
+    font-size: 1.2em;
+    padding:10px;
+    margin:0 3px;
+}
+.news-tamb{
+    margin-top: 30px;
+}
+.news-tamb img{
+    width: 100%;
+    height: auto;
+}
+.news-title h3{
+    margin: 30px 0;
+    font-weight:400;
+    font-size: 1.4em;
+}
+
+.news-content{
+    color:#5c5c5c;
+    line-height:20px;
+    font-size: 0.98em;
+    margin: 30px 0;
+}
+
+.widget-body article{
+    flex: 1;
+    min-width: calc(300px - 25px);
+    margin-right:25px;
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    background-color:#1e1e1e;
+}
+.footer-menu{
+    display: flex;
+}
+.fm1,.fm2,.fm3{
+    flex: 1;
+    color:#fff;
+    padding:20px;
+}
+
+.fm1{
+    background-color: #39AAE1;
+}
+.fm2{
+    background-color:#0079c7;
+}
+.fm3{
+    background-color: #2b4c99;
+}
+
+.fm-title{
+    margin: 20px;
+    text-align:center;
+    font-size:1.8em;
+    color:#fff;
+
+}
+.fm-content{
+    text-align:center;
+}
+.footer-area{
+    display: flex;
+}
+
+.footer-area-item{
+    color: #fff;
+    flex: 1;
+}
+footer .widget-title-text{
+    color:#fff;
+}
+.footer-content{
+    color: #757373;
+    margin: 30px 0;
+}
+.footer-copy{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 0.98em;
+    margin-top:30px;
+}
+.footer-copy a{
+    color: rgba(173, 168, 168,0.8);
+    font-size: 0.78em;
+}
+
+.footer-content-clinic{
+    display: flex;
+}
+
+.footer-content-clinic-item,
+.footer-content-clinic-item2{
+    flex: 1;
+}
+
+.footer-content-clinic-item p,
+.footer-content-clinic-item2 p{
+    margin: 5px;
+    color: #757373;
+}
+.social-network{
+    display: flex;
+    justify-content: flex-start;
+}
+.social-network img{
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 40px;
+}
+
+.posts-content-text{
+    font-size: 0.89em;
+    margin-top: 15px;
+    color: #ccc;
+}
+.posts-content-text-blue{
+    margin:10px 0;
+    color: #0079c7;
+    font-size: 0.8em;
+}
+.menu-mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px;
+}
+.mm-line{
+    height: 3px;
+    background-color: #39aae1;
+}
+@media (max-width: 1000px){
+    .container{
+        flex-direction: column;
+        max-width: 900px;
+    }
+    .logo{
+        justify-content:center;
+        padding: 20px 0;
+    }
+    .menu{
+        justify-content: center;
+        padding: 8px 0;
+    }
+    .widget-departaments {
+        margin-bottom: 30px;
+    }
+    .departaments{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .departaments-content {
+        width: 135px;
+    }
+}
+@media (max-width: 770px){
+    .container{
+        max-width: 710px;
+    }
+    .departaments{
+     flex-direction: column;
+    }
+    .departaments-content {
+        width: 350px;
+    }
+}
+
+@media (max-width: 600px){
+    #banner{
+        height: 1100px;;
+    }
+    .banner-headerLine{
+        padding: 20px;
+    }
+    .banner-headerLine h1{
+        font-size: 3em;
+    }
+
+    .banner-headerLine h2{
+        font-size: 17px;
+    }
+
+    .banner-options{
+        height: auto;
+        flex-direction:column;
+    }
+    .container{
+        flex-direction:column;
+
+    }
+    aside section,
+    #geral aside,
+    #geral{
+        padding:0 20px;
+    }
+
+    .departaments-content{
+        width: 260px;
+    }
+    .departaments{
+        flex-wrap: wrap;
+    }
+
+    .departaments-header {
+        justify-content: center;
+    }
+
+    .make{
+        padding: 20px;
+    }
+    .footer-menu{
+        flex-direction:column-reverse;
+    }
+
+    .footer-area{
+        flex-direction: column-reverse;
+        padding:0 20px;
+    }
+
+    .footer-copy{
+        padding:0 20px;
+    }
+
+    .widget-departaments {
+        margin-bottom: 30px;
+    }
+    /*config menu-mobile*/
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        background-color:#fff;
+        left: 0;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+    .header{
+        height: auto;
+    }
+    .logo{
+        padding: 0 20px;
+    }
+    .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+}
+
+@media (max-width: 420px){
+    .container {
+        max-width: 420px;
+    }
+
+    .departaments-content {
+        width: 150px;
+    }
+}
+
+@media (max-width: 360px){
+    .container {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 320px){
+    .container {
+        max-width: 320px;
+    }
+
+    .departaments-header {
+        display: block;
+    }
+
+    .departaments-content{
+        width: 280px;
+    }
+}
